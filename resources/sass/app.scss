@@ -1,0 +1,24 @@
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true; /* stylelint-disable-line scss/dollar-variable-default */
+$enable-rtl: true; /* stylelint-disable-line scss/dollar-variable-default */
+
+// Import styles
+@import "@coreui/coreui/scss/coreui";
+
+@import "layout";
+
+// If you want to add custom CSS you can put it here.
+@import "custom";
+
+// Definindo as customizações para a navegação
+.nav-link {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+
+    &:hover {
+        color: #f1f1f1; /* Cor do link ao passar o mouse */
+        text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    }
+}
